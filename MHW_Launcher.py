@@ -86,7 +86,7 @@ def windows(appdata):
                 # f = open(appdata, "w")
                 value = values[0].encode('ASCII')
                 value = secret.b85encode(value)
-                data[0] = "Please dont modify this file!!! We are not responsible for any data damage!!!\n"
+                data[0] = "Please dont modify this file!!! We are not responsible for any data damage!!!!\n"
                 data[1] = 'r\n'
                 data[2] = value.decode('ASCII')
                 file.writelines(data)
